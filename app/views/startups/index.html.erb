@@ -1,0 +1,11 @@
+<h1 class="text-center">Voici nos startups</h1>
+<p class="text-center"> La liste des startups au <%= @today %> :
+  <ul>
+    <% @startup.each do |startup| %>
+    <li><%= startup.name %> de la plateforme <%= startup.incubator %> - <i>(<%= startup.url %>)</i></li>
+    <% end %>
+
+  </ul>
+
+</p>
+
